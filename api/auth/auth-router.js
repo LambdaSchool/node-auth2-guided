@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs');
-
+const jwt = require("jsonwebtoken")
 const router = require('express').Router();
 
 const Users = require('../users/users-model.js');
@@ -43,7 +43,7 @@ router.post('/login', checkCredentials, (req, res, next) => {
 });
 
 function makeToken(user){
-  
+
 }
 
 module.exports = router;
