@@ -42,4 +42,8 @@ router.post('/login', checkCredentials, (req, res, next) => {
     .catch(next);
 });
 
+function makeToken(user){
+  
+}
+
 module.exports = router;
